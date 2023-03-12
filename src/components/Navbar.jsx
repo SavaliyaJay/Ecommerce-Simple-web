@@ -1,7 +1,9 @@
-import { Search } from "@material-ui/icons";
+import { Badge } from "@material-ui/core";
+import { Search, ShoppingBasketOutlined } from "@material-ui/icons";
 import React from "react";
 
 const Navbar = () => {
+  const style = "text-[14px] cursor-pointer ml-[25px]";
   return (
     <>
       <div className="navbar h-[60px] shadow-md relative z-10">
@@ -19,13 +21,21 @@ const Navbar = () => {
             </div>
           </div>
 
-{/* logo */}
+          {/* logo */}
           <div className="center flex-1 text-center ">
             <div className="logo font-bold text-lg">Jay Savaliya</div>
           </div>
 
-          
-          <div className="flex-1">3</div>
+          {/* left */}
+          <div className="right flex flex-1 items-center justify-end">
+            <div className={style}>Register</div>
+            <div className={style}>Sign in</div>
+            <div className={style}>
+              <Badge badgeContent={2} color="primary">
+                <ShoppingBasketOutlined />
+              </Badge>
+            </div>
+          </div>
         </div>
       </div>
     </>
