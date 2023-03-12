@@ -19,8 +19,13 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div>2</div>
-          <div>3</div>
+{/* logo */}
+          <div className="center flex-1 text-center ">
+            <div className="logo font-bold text-lg">Jay Savaliya</div>
+          </div>
+
+          
+          <div className="flex-1">3</div>
         </div>
       </div>
     </>
