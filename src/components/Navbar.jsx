@@ -15,7 +15,6 @@ const Navbar = () => {
               <input
                 type="text "
                 className="input outline-none"
-                placeholder=""
               />
               <Search className="" style={{ fontSize: "16px" }} />
             </div>
