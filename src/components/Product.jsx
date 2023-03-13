@@ -19,20 +19,36 @@ const iconStyle = 'h-[40px] w-[40px] rounded-full bg-white flex items-center jus
     setHoverEffects(' opacity-0')
     }
   return (
-    <div className="flex items-center justify-center flex-1 min-w-[290px] min-h-[350px] m-2 overflow-hidden rounded-md shadow-lg relative" onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverExit}>
-      <img src={item.src} alt="product" />
-      <div className={`flex items-center justify-center absolute w-[100%] h-[100%] ease-in duration-100` + hoverEffects}>
-        <div className={iconStyle}>
-          <ShoppingCartOutlined />
+    <>
+      <div className="min-w-[270px] min-h-[350px] m-2 overflow-hidden rounded-md shadow-lg relative bg-white">
+        <div
+          className="flex items-center justify-center flex-1 "
+          onMouseEnter={handleHoverEnter}
+          onMouseLeave={handleHoverExit}
+        >
+          <img src={item.src} alt="product" />
+          <div
+            className={
+              `flex items-center justify-center absolute w-[100%] h-[110%] ease-in duration-100` +
+              hoverEffects
+            }
+          >
+            <div className={iconStyle}>
+              <ShoppingCartOutlined />
+            </div>
+            <div className={iconStyle}>
+              <FavoriteBorderOutlined />
+            </div>
+            <div className={iconStyle}>
+              <SearchOutlined />
+            </div>
+          </div>
         </div>
-        <div className={iconStyle}>
-          <FavoriteBorderOutlined />
-        </div>
-        <div className={iconStyle}>
-          <SearchOutlined />
-        </div>
+        <div className="flex items-center justify-center mb-2">
+          <span className="font-bold">Price: </span> $
+          {item.price}</div>
       </div>
-    </div>
+    </>
   );
 };
 
