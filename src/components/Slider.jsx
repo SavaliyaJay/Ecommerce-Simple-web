@@ -1,7 +1,7 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import React, { useState } from "react";
 import Sliderbar from "../apifolder/Sliderbar";
-import "./Slider.css";
+// import "./Slider.css";
 
 const Slider = () => {
   //   var length = Sliderbar.length;
@@ -28,7 +28,7 @@ const Slider = () => {
       setactiveSlide(activeSlide - 1);
     }
   };
-  setInterval(nextSlide, 5000);
+  setInterval(nextSlide, 10000);
   return (
     <>
       <div className="parentDiv h-[540px] bg-white flex  items-center justify-between">
