@@ -1,18 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-const Category = (item) => {
+const Category = ({item}) => {
+
   return (
-    <>
-      <div>
-
-        <img src={item.src} alt="category_image" srcset="" />
-        <div>
-          <h2>{item.title}</h2>
-        </div>
-        <button>See More</button>
+  
+  <div className='flex-1 m-2 shadow-lg rounded-md overflow-hidden relative'>
+    {console.log(item)}
+      <img src={item.src} className="w-[100%]" alt='category_img'/>
+      <div className='flex absolute w-[100%] h-[100%] left-0 top-0 items-center justify-center flex-col'>
+          <h2 className='text-white font-medium text-[30px]'>{item.title}</h2>
+          <buttton className='btn'>See more</buttton>
       </div>
-    </>
-  )
-}
+  </div>)
+};
 
-export default Category
+export default Category;
