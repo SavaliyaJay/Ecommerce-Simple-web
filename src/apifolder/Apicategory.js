@@ -1,4 +1,4 @@
-export const Apicategory = [
+ const Apicategory = [
     {
         title: 'Jeans',
         src: './assets/4.jpg'
@@ -11,4 +11,6 @@ export const Apicategory = [
         title: 'Style Tee Shirts',
         src: './assets/6.jpg'
     }
-]
+];
+
+export default Apicategory
