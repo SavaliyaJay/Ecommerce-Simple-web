@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import Products from '../components/Products';
 import Slider from './../components/Slider';
 import NewsLetter from './../components/NewsLetter';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
     <div className="flex justify-center items-center text-[20px] font-bold mt-5">Top Most Product</div>
     <Products />
     <NewsLetter/>
+    <Footer/>
    </>
   )
 }
