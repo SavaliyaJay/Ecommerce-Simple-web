@@ -1,7 +1,9 @@
 // import CategoryPage from "./pages/CategoryPage";
 // import Home from "./pages/Home";
 
-import Cart from "./pages/Cart";
+// import Cart from "./pages/Cart";
+import Jay from "./components/Jay";
+
 // import ProductPage from "./pages/ProductPage";
 
 function App() {
@@ -10,7 +12,9 @@ function App() {
     {/* <Home /> */}
     {/* <CategoryPage/> */}
     {/* <ProductPage /> */}
-    <Cart />
+    {/* <Cart /> */}
+    <Jay/>
+
    </>
   );
 }
