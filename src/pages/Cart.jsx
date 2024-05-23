@@ -1,7 +1,7 @@
-import React from 'react'
-import Announce from '../components/Announce'
+import React from 'react';
+import Announce from '../components/Announce';
 // import Categories from '../components/Categories';
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar';
 // import Products from '../components/Products';
 // import Slider from './../components/Slider';
 import NewsLetter from './../components/NewsLetter';
@@ -9,10 +9,10 @@ import Footer from '../components/Footer';
 import Counter from './../components/Counter';
 
 const Cart = () => {
-  const SummaryItemStyle = "SummaryItem flex justify-between mt-3 w-[100%]";
-  const ProductDivStyle = "flex w-[100%] h-auto items-center mobile:flex-col";
+  const SummaryItemStyle = 'SummaryItem flex justify-between mt-3 w-[100%]';
+  const ProductDivStyle = 'flex w-[100%] h-auto items-center mobile:flex-col';
   const PriceQuantityStyle =
-    "flex-auto flex flex-col justify-center items-center mobile:mt-7 mobile:mb-7";
+    'flex-auto flex flex-col justify-center items-center mobile:mt-7 mobile:mb-7';
   return (
     <div>
       <Announce />
@@ -142,7 +142,7 @@ const Cart = () => {
                 </p>
               </div>
             </div>
-              <hr className="mb-7 mt-7 mobile:mt-0" />
+            <hr className="mb-7 mt-7 mobile:mt-0" />
           </div>
           <div className="Summary flex-[0.4] flex flex-col items-center w-auto h-[40vh] border-2 border-[#8a4af3] rounded-md shadow-lg p-5 text-lg mobile:mb-6">
             <h1 className="text-[2rem]">SUMMARY</h1>
@@ -158,7 +158,7 @@ const Cart = () => {
               <p>Shipping Discount:</p>
               <p>-$10</p>
             </div>
-            <div className={SummaryItemStyle + " text-3xl font-bold"}>
+            <div className={SummaryItemStyle + ' text-3xl font-bold'}>
               <p>Total:</p>
               <p>$140</p>
             </div>

@@ -1,9 +1,9 @@
-import { Badge } from "@material-ui/core";
-import { Search, ShoppingBasketOutlined } from "@material-ui/icons";
-import React from "react";
+import { Badge } from '@material-ui/core';
+import { Search, ShoppingBasketOutlined } from '@material-ui/icons';
+import React from 'react';
 
 const Navbar = () => {
-  const style = "text-[14px] cursor-pointer ml-[25px]";
+  const style = 'text-[14px] cursor-pointer ml-[25px]';
   return (
     <>
       <div className="navbar h-[60px] shadow-md relative z-10">
@@ -12,11 +12,8 @@ const Navbar = () => {
           <div className="left flex flex-1 items-center">
             <div className="language cursor-pointer text-[16px]">En</div>
             <div className="searchInput flex border-[2px] border-solid border-lighgrey rounded-md items-center ml-[10px] p-[5px] focus-within:border-[#1c0b9a] transition-all">
-              <input
-                type="text "
-                className="input outline-none"
-              />
-              <Search className="" style={{ fontSize: "16px" }} />
+              <input type="text " className="input outline-none" />
+              <Search className="" style={{ fontSize: '16px' }} />
             </div>
           </div>
 

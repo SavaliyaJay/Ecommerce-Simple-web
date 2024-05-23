@@ -1,6 +1,6 @@
-import React from "react";
-import { Apicategory } from "../apifolder/Apicategory";
-import Category from "./Category";
+import React from 'react';
+import { Apicategory } from '../apifolder/Apicategory';
+import Category from './Category';
 
 const Categories = () => {
   return (

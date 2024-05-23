@@ -1,11 +1,11 @@
-import React from "react";
-import Announce from "../components/Announce";
+import React from 'react';
+import Announce from '../components/Announce';
 // import Categories from '../components/Categories';
-import Navbar from "../components/Navbar";
+import Navbar from '../components/Navbar';
 // import Products from "../components/Products";
 // import Slider from './../components/Slider';
-import NewsLetter from "./../components/NewsLetter";
-import Footer from "../components/Footer";
+import NewsLetter from './../components/NewsLetter';
+import Footer from '../components/Footer';
 import Counter from './../components/Counter';
 
 const ProductPage = () => {

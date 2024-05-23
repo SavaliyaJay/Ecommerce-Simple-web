@@ -1,18 +1,17 @@
-import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
-import React, { useState } from "react";
-import Sliderbar from "../apifolder/Sliderbar";
+import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
+import React, { useState } from 'react';
+import Sliderbar from '../apifolder/Sliderbar';
 // import "./Slider.css";
 
 const Slider = () => {
   //   var length = Sliderbar.length;
   //   console.log(length);
 
-
   const [slides] = useState(Sliderbar);
   const [activeSlide, setactiveSlide] = useState(0);
 
   const arrowStyle =
-    "rounded-full bg-grey flex justify-center items-center shadow-sm hover:cursor-pointer";
+    'rounded-full bg-grey flex justify-center items-center shadow-sm hover:cursor-pointer';
 
   const nextSlide = () => {
     if (activeSlide === slides.length - 1) {
@@ -33,14 +32,14 @@ const Slider = () => {
     <>
       <div className="parentDiv h-[540px] bg-white flex  items-center justify-between">
         <div className={arrowStyle}>
-          <ArrowLeftOutlined style={{ fontSize: "50px" }} onClick={preSlide} />
+          <ArrowLeftOutlined style={{ fontSize: '50px' }} onClick={preSlide} />
         </div>
         {
           // eslint-disable-next-line
           slides.map((slide, index) => {
             if (index === activeSlide) {
               return (
-                <div className="wrapper flex w-[100%] h-[500px] justify-center items-center shadow-2xl rounded-lg border-[#c0c0c0]  overflow-hidden relative ">
+                <div key={index} className="wrapper flex w-[100%] h-[500px] justify-center items-center shadow-2xl rounded-lg border-[#c0c0c0]  overflow-hidden relative ">
                   <div className="w-full h-screen">
                     <img
                       className="top-0 left-0 w-full h-screen object-cover"
@@ -61,7 +60,7 @@ const Slider = () => {
         }
         <div className={arrowStyle}>
           <ArrowRightOutlined
-            style={{ fontSize: "50px" }}
+            style={{ fontSize: '50px' }}
             onClick={nextSlide}
           />
         </div>

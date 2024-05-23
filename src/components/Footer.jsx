@@ -1,10 +1,17 @@
-import { EmailOutlined, Facebook, Instagram, LocalPhoneOutlined, LocationOnOutlined,  Pinterest, Twitter } from "@material-ui/icons";
-import React from "react";
+import {
+  EmailOutlined,
+  Facebook,
+  Instagram,
+  LocalPhoneOutlined,
+  LocationOnOutlined,
+  Pinterest,
+  Twitter,
+} from '@material-ui/icons';
+import React from 'react';
 
 const Footer = () => {
-    const socialStyle = 'm-3 rounded-full cursor-pointer p-2 text-white';
+  const socialStyle = 'm-3 rounded-full cursor-pointer p-2 text-white';
   return (
-
     <div className="flex items-center justify-around p-2 mobile:flex-col mobile:items-start">
       <div className="flex-1 flex flex-col flex-wrap p-2">
         <h1 className="text-[25px]">Jay Savaliya</h1>
@@ -25,24 +32,23 @@ const Footer = () => {
             <Twitter />
           </div>
           <div className={socialStyle + ` bg-red-600`}>
-            <Pinterest/>
+            <Pinterest />
           </div>
         </div>
       </div>
 
-
       <div className="flex-1 flex flex-col p-2">
         <div className="flex m-3">
-            <LocationOnOutlined className="text-[#1c0b9a]"/>
-            <p className='pl-3'>India</p>
+          <LocationOnOutlined className="text-[#1c0b9a]" />
+          <p className="pl-3">India</p>
         </div>
         <div className="flex m-3">
-            <LocalPhoneOutlined className="text-[#1c0b9a]"/>
-            <p className='pl-3'>+91 9876543210</p>
+          <LocalPhoneOutlined className="text-[#1c0b9a]" />
+          <p className="pl-3">+91 9876543210</p>
         </div>
         <div className="flex m-3">
-            <EmailOutlined className="text-[#1c0b9a]"/>
-            <p className='pl-3'>jrsavaliya04pc@gmail.com</p>
+          <EmailOutlined className="text-[#1c0b9a]" />
+          <p className="pl-3">jrsavaliya04pc@gmail.com</p>
         </div>
       </div>
     </div>

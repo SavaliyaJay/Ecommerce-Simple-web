@@ -1,11 +1,11 @@
-import React from "react";
-import Announce from "../components/Announce";
+import React from 'react';
+import Announce from '../components/Announce';
 // import Categories from '../components/Categories';
-import Navbar from "../components/Navbar";
-import Products from "../components/Products";
+import Navbar from '../components/Navbar';
+import Products from '../components/Products';
 // import Slider from './../components/Slider';
-import NewsLetter from "./../components/NewsLetter";
-import Footer from "../components/Footer";
+import NewsLetter from './../components/NewsLetter';
+import Footer from '../components/Footer';
 
 const CategoryPage = () => {
   return (
@@ -13,7 +13,7 @@ const CategoryPage = () => {
       <Announce />
       <Navbar />
       <div className="flex flex-col p-5">
-        <h1 className="text-[30px]">Men's</h1>
+        <h1 className="text-[30px]">Men  `&apos;` s</h1>
         <div className="flex items-center justify-between mt-3">
           <div className="flex mobile:flex-col">
             <p>Filter by</p>
